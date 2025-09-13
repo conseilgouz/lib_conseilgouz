@@ -1,0 +1,13 @@
+<changelogs>
+	<changelog>
+		<element>conseilgouz</element>
+		<type>library</type>
+		<version>1.0.0</version>
+        <note>
+            <item>Update : 13/09/2025</item>
+        </note>
+        <addition>
+            <item>New library</item>
+        </addition>
+	</changelog>
+</changelogs>
