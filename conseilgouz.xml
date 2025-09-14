@@ -16,9 +16,11 @@
         <folder>layouts</folder>
 		<file>index.html</file>
 	</files>
-	<files  folder="media" target="media/conseilgouz">
+	<files folder="media" target="media/conseilgouz">
 		<folder>fields</folder>
-		<filename>index.html</filename>
+	</files>
+	<files target="media/conseilgouz">
+		<file>index.html</file>
 	</files>
     </fileset>
 	<updateservers>
