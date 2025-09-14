@@ -1,6 +1,17 @@
 <changelogs>
 	<changelog>
 		<element>conseilgouz</element>
+		<type>file</type>
+		<version>1.0.3</version>
+        <note>
+            <item>Update : 14/09/2025</item>
+        </note>
+        <fix>
+            <item>Install Library becomes File</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>conseilgouz</element>
 		<type>library</type>
 		<version>1.0.2</version>
         <note>
