@@ -11,7 +11,7 @@
 	<authorUrl>www.conseilgouz.com</authorUrl>
 	<namespace>ConseilGouz\Library</namespace>
 	<fileset>
-    <files>
+    <files target="libraries/conseilgouz">
 		<folder>Field</folder>
         <folder>layouts</folder>
 		<file>index.html</file>
