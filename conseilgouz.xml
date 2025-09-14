@@ -10,7 +10,8 @@
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
 	<namespace>ConseilGouz\Library</namespace>
-	<files>
+	<fileset>
+    <files>
 		<folder>Field</folder>
         <folder>layouts</folder>
 		<file>index.html</file>
@@ -19,6 +20,7 @@
 		<folder>fields</folder>
 		<filename>index.html</filename>
 	</media>
+    </fileset>
 	<updateservers>
 	<server type="extension" name="ConseilGouz Library" priority="1">https://raw.githubusercontent.com/conseilgouz/updates_github/master/lib_conseilgouz_update.xml</server>
 	</updateservers>
