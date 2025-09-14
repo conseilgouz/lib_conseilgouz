@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="4.0" type="library" method="upgrade">
-	<name>file_conseilgouz</name>
+	<name>lib_conseilgouz</name>
 	<libraryname>conseilgouz</libraryname>
 	<author>ConseilGouz</author>
 	<version>1.0.4</version>
