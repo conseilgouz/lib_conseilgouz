@@ -16,7 +16,7 @@
         <folder>layouts</folder>
 		<file>index.html</file>
 	</files>
-	<media destination="conseilgouz" folder="media">
+	<media target="media/conseilgouz" folder="media">
 		<folder>fields</folder>
 		<filename>index.html</filename>
 	</media>
