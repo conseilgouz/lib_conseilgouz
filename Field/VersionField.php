@@ -33,7 +33,10 @@ class VersionField extends FormField
 		$return = '';
 		// Load language
 		$extension = $this->def('extension');
-
+        $type = "component";
+        if ($this->def('typext')) {
+            $type = $this->def('typext');
+        }
 		$version = '';
 
 		$db = Factory::getContainer()->get(DatabaseInterface::class);
@@ -41,7 +44,7 @@ class VersionField extends FormField
 		$query
 			->select($db->quoteName('manifest_cache'))
 			->from($db->quoteName('#__extensions'))
-			->where($db->quoteName('element') . '=' . $db->Quote($extension) .' AND '.$db->quoteName('type') . '=' . $db->Quote('component'));
+			->where($db->quoteName('element') . '=' . $db->Quote($extension) .' AND '.$db->quoteName('type') . '=' . $db->Quote($type));
 		$db->setQuery($query, 0, 1);
 		$row = $db->loadAssoc();
 		$tmp = json_decode($row['manifest_cache']);
