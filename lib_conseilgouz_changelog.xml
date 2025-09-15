@@ -2,6 +2,17 @@
 	<changelog>
 		<element>conseilgouz</element>
 		<type>file</type>
+		<version>1.0.4</version>
+        <note>
+            <item>Update : 15/09/2025</item>
+        </note>
+        <addition>
+            <item>CG Variable field</item>
+        </addition>
+	</changelog>
+	<changelog>
+		<element>conseilgouz</element>
+		<type>file</type>
 		<version>1.0.3</version>
         <note>
             <item>Update : 14/09/2025</item>
