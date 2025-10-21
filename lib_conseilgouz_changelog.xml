@@ -2,6 +2,28 @@
 	<changelog>
 		<element>conseilgouz</element>
 		<type>file</type>
+		<version>1.1.0</version>
+        <note>
+            <item>Update : 20/10/2025</item>
+        </note>
+        <fix>
+            <item>Joomla 6 : getQuery(true) becomes createQuery()</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>conseilgouz</element>
+		<type>file</type>
+		<version>1.0.5</version>
+        <note>
+            <item>Update : 03/10/2025</item>
+        </note>
+        <addition>
+            <item>CG Version field : add float parameter (for field plugins)</item>
+        </addition>
+	</changelog>
+	<changelog>
+		<element>conseilgouz</element>
+		<type>file</type>
 		<version>1.0.4</version>
         <note>
             <item>Update : 15/09/2025</item>

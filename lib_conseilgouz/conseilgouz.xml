@@ -3,8 +3,8 @@
 	<name>lib_conseilgouz</name>
 	<libraryname>conseilgouz</libraryname>
 	<author>ConseilGouz</author>
-	<version>1.0.4</version>
-	<creationDate>2025-09-15</creationDate>
+	<version>1.1.0</version>
+	<creationDate>2025-10-20</creationDate>
 	<copyright>(C)2025 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
