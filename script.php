@@ -67,7 +67,7 @@ class plgsystemconseilgouzInstallerScript
         $db = Factory::getContainer()->get(DatabaseInterface::class);
         $conditions = array(
             $db->qn('type') . ' = ' . $db->q('library'),
-            $db->qn('element') . ' = ' . $db->quote('conseilgouz')
+            $db->qn('element') . ' = ' . $db->quote('lib_conseilgouz')
         );
         $fields = array($db->qn('client_id') . ' = 0');
 
