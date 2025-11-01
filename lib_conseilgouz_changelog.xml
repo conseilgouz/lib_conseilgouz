@@ -2,17 +2,6 @@
 	<changelog>
 		<element>conseilgouz</element>
 		<type>file</type>
-		<version>1.1.1</version>
-        <note>
-            <item>Update : 01/11/2025</item>
-        </note>
-        <fix>
-            <item>Update Server : add client = site </item>
-        </fix>
-	</changelog>
-	<changelog>
-		<element>conseilgouz</element>
-		<type>file</type>
 		<version>1.1.0</version>
         <note>
             <item>Update : 20/10/2025</item>
