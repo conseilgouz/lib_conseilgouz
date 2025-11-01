@@ -63,12 +63,24 @@ class plgsystemconseilgouzInstallerScript
 
     private function postinstall_cleanup()
     {
-        if (!$this->checkLibrary('conseilgouz')) { // need library installation
-            $ret = $this->installPackage('lib_conseilgouz');
-            if ($ret) {
-                Factory::getApplication()->enqueueMessage('ConseilGouz Library ' . $this->newlib_version . ' installed', 'notice');
-            }
+        $db = Factory::getContainer()->get(DatabaseInterface::class);
+        $conditions = array(
+            $db->qn('type') . ' = ' . $db->q('library'),
+            $db->qn('client_id') . ' = ' . $db->q('0'),
+            $db->qn('element') . ' = ' . $db->quote('conseilgouz')
+        );
+        $fields = array($db->qn('client_id') . ' = 1');
+
+        $query = $db->getQuery(true);
+		$query->update($db->quoteName('#__extensions'))->set($fields)->where($conditions);
+		$db->setQuery($query);
+        try {
+	        $db->execute();
         }
+        catch (\Exception $e) {
+            Factory::getApplication()->enqueueMessage('unable to enable '.$this->name, 'error');
+        }
+
         // Uninstall this installer
         $this->uninstallInstaller();
     }
