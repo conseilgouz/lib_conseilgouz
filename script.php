@@ -63,13 +63,13 @@ class plgsystemconseilgouzInstallerScript
 
     private function postinstall_cleanup()
     {
+        // force client_id 
         $db = Factory::getContainer()->get(DatabaseInterface::class);
         $conditions = array(
             $db->qn('type') . ' = ' . $db->q('library'),
-            $db->qn('client_id') . ' = ' . $db->q('0'),
             $db->qn('element') . ' = ' . $db->quote('conseilgouz')
         );
-        $fields = array($db->qn('client_id') . ' = 1');
+        $fields = array($db->qn('client_id') . ' = 0');
 
         $query = $db->getQuery(true);
 		$query->update($db->quoteName('#__extensions'))->set($fields)->where($conditions);
